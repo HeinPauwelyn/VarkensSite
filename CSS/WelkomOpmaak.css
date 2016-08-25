@@ -1,0 +1,206 @@
+::-webkit-scrollbar-track-piece:start{
+
+}
+
+html {
+    font: 'ubuntu';
+    width: 100%;
+    float: left;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('../afbeeldingen/headerfoto.png');
+    background-color: #F3EEF0;
+    background-position-y: -16rem;
+    background-position-x: -15em;
+}
+
+.kleiner {
+	width: 250px;	
+	float: right;
+}
+
+.contrast {
+    color: #000000;
+}
+
+main {
+	clear: left;
+    margin-top: 650px;
+}
+
+header ul {
+    list-style-type: none;
+    margin-left: 10%;
+	height: 150px;
+    overflow: auto;
+}
+
+header li{
+    display: inline-block;
+	font-family: 'ubuntu';
+	font-weight: 600;
+}
+
+li > a {
+    height: 25px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px;
+	margin-top: 25px;
+    margin-left: 10px;
+    line-height: 25px;
+    text-align: center;
+	color: #000000;
+}
+
+.menu:hover, .menu:focus, .menu.actief, .kleinMenu p:hover {
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
+	font-style: normal;
+	font-weight: 600;
+    margin-bottom: 0;
+}
+
+header .actief{
+	border-bottom-color: #E66E;
+	color: #E66E00;
+	cursor: default;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.icoon{
+	height:100px;
+	width:100px;
+	margin-left:15px;
+	margin-top:20px;
+	float:left;
+}
+
+.icoon:focus {
+	background-color:#E66E;
+}
+
+.intro > img {
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+img {
+    width: 500px;
+}
+
+audio {
+    width: 380px;
+    height: 20px;
+}
+
+/*footer*/
+
+footer {
+	clear: left;
+	background-image: url('../afbeeldingen/bg-Menu.JPG');
+	height: 95px;
+	border-radius: 15px 15px 0 0;
+	background-repeat: repeat;
+	margin-top: 15px;
+}
+
+footer > p {
+	text-align: right;
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
+	line-height: 30px;
+}
+
+footer div {
+	width: 30%;
+	margin: 0px 2%;
+	display: inline-block;
+    float: left;
+}
+
+footer a {
+	text-align: left;
+	color: black;
+	text-decoration: underline;
+	line-height: 20px;
+	height: 20px;
+	margin: 0;
+	padding: 3px 0;
+}
+
+/*navigatie verkleinen*/
+
+.kleinMenu {
+    height: 0px;
+    visibility: hidden;
+    margin: 0;
+}
+
+.kleinMenu p {
+    height: 25px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#kleineNav {
+    height: 200px;
+    background-color: rgba(230,110,170,0.5);
+}
+
+@media screen and (max-width: 768px){
+    .kleinMenu {
+        height: 25px;
+        visibility: visible;
+        margin: 0;
+        margin-left: 10%;
+        display: inline-block;
+        margin-top: 50px;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+
+    li > a {
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+
+    .grootMenu {
+        height: 0;
+    }
+
+    body {
+        width: 95%;
+        margin: auto;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    html {
+        background-position-y: -16rem;
+        background-position-x: -45em;
+    }
+}
+
+/*breed*/
+@media only screen and (min-width: 992px) {
+    body {
+        margin: auto;
+        width: 960px;
+        /*background-color: #e28f89;*/
+    }
+
+    img{
+        width: 500px;
+    }
+
+    #kleineNav {
+    }
+}

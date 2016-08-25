@@ -1,0 +1,69 @@
+img {
+    width: 500px;
+    height: 330px;
+    margin-bottom: 20px;
+}
+
+.clearfix {
+    margin-bottom: 20px;
+    clear: left;
+}
+
+b {
+	font-weight: 700;
+}
+
+#eerste {
+    margin-top: 35px;
+}
+
+#biggen {
+    width: 500px;
+    height: 686px;
+    float: right;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.localnav li:hover {
+    text-decoration: underline;
+}
+
+.localnav ul {
+    margin: 0;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.localnav li {
+    margin: 10px 15px;
+    cursor: default;
+}
+
+.localnav ul {
+    padding: 0;
+}
+
+li.actief {
+    margin: 0 15px;
+    padding-top: 30px;
+    background-image: url("../afbeeldingen/pijlop.gif");
+    background-repeat: no-repeat;
+    color: #E56EA9;
+    background-position: 50% 0;
+}
+
+article#ras {
+    min-height: 340px;
+}
+
+.ing li {
+    font-size: 13px;
+}
+
+.rechts {
+    float: right;
+}
+

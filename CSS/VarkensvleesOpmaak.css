@@ -1,0 +1,73 @@
+.click {
+	fill: #F3E5E2;
+	stroke: #000000;
+	stroke-width: 5;
+	stroke-miterlimit: 10;
+	cursor: pointer;
+}
+
+#ontbreken {
+    vertical-align: text-bottom;
+}
+
+#ontbreken span {
+    margin-left: 15px;
+}
+
+span.click:hover {
+    text-decoration: underline;
+}
+
+path:hover, path:focus {
+	fill: #FFC0CB;
+}
+
+.varkensdeelSelectie {
+	margin-top: 10px;
+}
+
+.vleesactief {
+	fill: #FFC0CB;
+}
+
+.algemeneInfo {
+    margin-top: 25px;
+}
+
+#afdeeldingOnderdeel, img  {
+    width: 500px;
+}
+
+.varkensdeelSelectie {
+	margin-top: 160px;	
+}
+
+.vleesInfo {
+	margin-bottom: 15px;
+	height:100%;
+}
+
+svg {
+	height: 443px;
+}
+
+@media only screen and (max-width: 768px) {
+    svg {
+        width: 100%;
+    }
+}
+
+/*normaal*/
+@media only screen and (min-width: 768px) {
+    svg {
+        width: 100%;
+    }
+
+}
+
+/*breed*/
+@media only screen and (min-width: 992px) {
+    svg {
+        width: 100%;
+    }
+}

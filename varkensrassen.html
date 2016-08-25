@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Varkensrassen</title>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="afbeeldingen/ProvarIcoon.png" />
+	<link href="CSS/Normalize.css" rel="stylesheet"/>
+	<link href="CSS/RassenOpmaak.css" rel="stylesheet"/>
+	<link href="CSS/MenuOpmaak.css" rel="stylesheet"/>
+    <script src="JS/Rassen.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="afbeeldingen/ProvarIcoon.png" class="icoon" alt="naar home pagina" />
+            <div class="kleinMenu">
+                <p id="menuKnop">Toon Menu</p>
+            </div>
+            <ul class="grootMenu">
+                <li><a href="index.html" class="menu" alt="Home">Home</a></li>
+                <li><a href="varkensrassen.html" class="menu actief" alt="Varkensrassen">Varkensrassen</a></li>
+                <li><a href="kweken.html" class="menu" alt="Varkens kweken">Varkens kweken</a></li>
+                <li><a href="varkensvlees.html" class="menu" alt="Varkensvlees">Varkensvlees</a></li>
+                <li><a href="ziekten.html" class="menu" alt="Ziekten">Ziekten</a></li>
+                <li><a href="recept.html" class="menu" alt="recepten">Een recept</a></li>
+                <li><a href="contact.html" class="menu" alt="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+	<main>
+        <div id="eerste">
+            <p>In het algemeen geld dat <b>hoe meer vleeskwalieteit</b> het varken heeft, <b>hoe minder goede moedereigenshappen</b> voor hun jongen. Dit geld ook andersom. Als je varkens kruist (voor bv. betere moedereigenschappen), moet je er rekening mee houden dat de vleeskwalieteit van het gekruiste ras minder is.</p>
+            <p>Hieronder vind je enkele varkensrassen alfabetisch gesorteerd.</p>
+            <hr/>
+        </div>
+            <article id="ras" class="active">
+                <img src="afbeeldingen/Berkshire.jpg"/>
+                <h2>Berkshire</h2>
+                <p>Het Berkshire varken word vooral gekweekt in het Verenigd Koninkrijk. Deze varkens zijn <b>volledig zwart met witte poten</b>. Ze hebben een <b>zeer goede vlees kwaliteit</b> en wordt daarom gecommercialiseerd als <b>Duke of Berkshire</b>.</p>
+                <p>Dit ras is <b>van kop tot staart zeer kort</b>. Dit leid tot <b>minder tepels</b> en dus <b>minder biggen</b> per zeug.</p>
+                <!--<hr class="clearfix"/>-->
+            </article>
+
+        <div class="clearfix"></div>
+
+        <nav class="localnav">
+            <ul>
+                <li class="actief locnav">Berkshire</li>
+                <li class="locnav">Duroc</li>
+                <li class="locnav">Hangbuikvarkens</li>
+                <li class="locnav">Landrassen</li>
+                <li class="locnav">Piétrain</li>
+                <li class="locnav">Saddleback</li>
+                <li class="locnav">Wild varken</li>
+                <li class="locnav">Yorkshire of Large White</li>
+            </ul>
+        </nav>
+
+	</main>
+    <footer>
+        <div>
+            <p><strong>Over mij</strong></p>
+            <p class="bron">Deze website werd gemaakt door Hein Pauwelyn. Bekijk zeker ook eens <a href="http://student.howest.be/hein.pauwelyn-vand1/" target="_blank">mijn blog</a>.</p>
+        </div>
+        <div>
+            <p><strong>Bron</strong></p>
+            <p class="bron">Bron afbeeldingen: <a href="http://pixabay.com/" target="_blank">Pixabay</a> (tenzij anders vermeld)</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementsByTagName("main")[0].style.minHeight = window.innerHeight - 213 + "px";
+    </script>
+
+    <script>
+        document.getElementsByClassName("kleinMenu")[0].addEventListener("click", function () {
+            toonMenu();
+        });
+
+        function toonMenu() {
+
+            var menu = document.getElementsByClassName("grootMenu")[0];
+
+            if (menu.id === "") {
+
+                menu.id = "kleineNav";
+            }
+            else{
+
+                menu.id = "";
+            }
+        }
+    </script>
+</body>
+</html>

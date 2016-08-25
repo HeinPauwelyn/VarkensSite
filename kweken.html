@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Varkensrassen</title>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="afbeeldingen/ProvarIcoon.png" />
+	<link href="CSS/Normalize.css" rel="stylesheet"/>
+	<link href="CSS/RassenOpmaak.css" rel="stylesheet"/>
+	<link href="CSS/MenuOpmaak.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="afbeeldingen/ProvarIcoon.png" class="icoon" alt="naar home pagina" />
+            <div class="kleinMenu">
+                <p id="menuKnop">Toon Menu</p>
+            </div>
+            <ul class="grootMenu">
+                <li><a href="index.html" class="menu" alt="Home">Home</a></li>
+                <li><a href="varkensrassen.html" class="menu" alt="Varkensrassen">Varkensrassen</a></li>
+                <li><a href="kweken.html" class="menu actief" alt="Varkens kweken">Varkens kweken</a></li>
+                <li><a href="varkensvlees.html" class="menu" alt="Varkensvlees">Varkensvlees</a></li>
+                <li><a href="ziekten.html" class="menu" alt="Ziekten">Ziekten</a></li>
+                <li><a href="recept.html" class="menu" alt="recepten">Een recept</a></li>
+                <li><a href="contact.html" class="menu" alt="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+	<main>
+        <article>
+            <h1>Voedsel voor varkens</h1>
+            <p>Zoals gezegd op de homepagina, zijn  varkens <strong>alleseters</strong>. Dit wil dus zeggen dat ze zowel vlees, als groenten en fruit eten. Toch wordt dit <strong>niet gedaan</strong> omdat ze dan agressief worden en mensen gaan aanvallen. Daarom worden er plataardige producten gegeven zoals tarwe (te vinden in brood), appels, sla enz. Dit kan evengoed etensresten zijn.</p>
+        </article>
+        <hr class="clearfix"/>
+        <article>
+            <img src="afbeeldingen/modder.jpg" alt="Wild varken in de modder"/>
+            <h1>Verzogen en verblijf</h1>
+            <p>Varkens hebben weinig verzoring nodig en leven van nature <strong>zelfstandig</strong>. Varkens vinden het leuk om in de <strong>modder</strong> te ploeteren. Zo kunnen ze hun huid beschermen tegen beten van vliegen of andere bijtende insecten. Voorzie daarom een grote goed omheide stuk grond met modderbaden. Voorzie ook een <strong>shuur of stal</strong> zodat het varken in de winter kan shuilen voor de kou. Volgens de wet is er minstens <strong>één m²</strong> nodig voor een volwassen varken.</p>
+        </article>
+        <hr class="clearfix"/>
+        <article>
+            <img src="afbeeldingen/biggen.jpg" alt="Biggen in het stro" id="biggen"/>
+            <h1>Biggen zogen</h1>
+            <p>Biggen zijn altijd leuk om te krijgen, dat jong nieuw leven... Maar soms moet een mens wel eens ingrijpen tijdens en vlak na de geboorte. Dit is niet altijd zo gemakkelijk. Daarom staat alles hier nog eens op een rijtje.</p>
+            <ul class="normal">
+                <li>Normaal moet er tussen elke big <strong>ongeveer 15 minuten</strong> zijn. Als dit plots oploopt naar 30 minuten of meer, moet er ingegrepen worden. Dan moet je de biggen met de hand uithalen.</li>
+                <li>Als je merkt dat de zeug zich agressief tegen over de biggen houd, is het verstandig om de <strong>biggen even appart te houden</strong> en na de bevalling de biggen er opnieuw bij te laten.</li>
+            </ul>
+            <p>Vlak na de geboorte van de biggen is het belangrijk om de biggen zo rap mogelijk <strong>biest</strong> te laten drinken van de zeug. Biest is de eerste melk van een zug na de geboorte en <strong>bevat antistoffen</strong> van de zeug die belangerijk zijn voor een goede start van de biggen.</p>
+            <p>Zorg ervoor dat het niet te warm of te koud is in de stal. In een te koude stal is het namelijk mogelijk dat de big sterft door onderkoeling. Een goede temperatuur is tussen de <strong>35 en 37°C in het biggennest</strong>. Naarmate ze groeien, mag de temperatuur dalen. Voor de <strong>zeugen</strong> is een temperatuur <strong>tussen de 18 en 23°C</strong> normaal. Een opmerkelijk verschil dat noodzakelijk is. Je kan het aan het <strong>gedrag van de biggen</strong> zien dat het te warm of te koud is. Bij te warme ruimte liggen de biggen te versprijd van elkaar en liggen volledig uitgestrekt. Bij een te koude temperatuur is dit net andersom. Ze liggen te dicht bij elkaar waardoor de onderste biggen kunnen stikken.</p>
+        </article>
+	</main>
+    <div class="clearfixright"></div>
+    <footer>
+        <div>
+            <p><strong>Over mij</strong></p>
+            <p class="bron">Deze website werd gemaakt door Hein Pauwelyn. Bekijk zeker ook eens <a href="http://student.howest.be/hein.pauwelyn-vand1/" target="_blank">mijn blog</a>.</p>
+        </div>
+        <div>
+            <p><strong>Bron</strong></p>
+            <p class="bron">Bron afbeeldingen: <a href="http://pixabay.com/" target="_blank">Pixabay</a> (tenzij anders vermeld)</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementsByClassName("kleinMenu")[0].addEventListener("click", function () {
+            toonMenu();
+        });
+
+        function toonMenu() {
+
+            var menu = document.getElementsByClassName("grootMenu")[0];
+
+            if (menu.id === "") {
+
+                menu.id = "kleineNav";
+            }
+            else{
+
+                menu.id = "";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

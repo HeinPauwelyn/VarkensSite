@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Ziekten</title>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="afbeeldingen/ProvarIcoon.png" />
+    <link href="CSS/Normalize.css" rel="stylesheet"/>
+    <link href="CSS/ZiektenOpmaak.css" rel="stylesheet"/>
+    <link href="CSS/MenuOpmaak.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="afbeeldingen/ProvarIcoon.png" class="icoon" alt="naar home pagina" />
+            <div class="kleinMenu">
+                <p id="menuKnop">Toon Menu</p>
+            </div>
+            <ul class="grootMenu">
+                <li><a href="index.html" class="menu" alt="Home">Home</a></li>
+                <li><a href="varkensrassen.html" class="menu" alt="Varkensrassen">Varkensrassen</a></li>
+                <li><a href="kweken.html" class="menu" alt="Varkens kweken">Varkens kweken</a></li>
+                <li><a href="varkensvlees.html" class="menu" alt="Varkensvlees">Varkensvlees</a></li>
+                <li><a href="ziekten.html" class="menu actief" alt="Ziekten">Ziekten</a></li>
+                <li><a href="recept.html" class="menu" alt="recepten">Een recept</a></li>
+                <li><a href="contact.html" class="menu" alt="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <p>Een ziek varken moet uiteraard verzorgd worden. Je kan ze niet aan hun lot overlaten. Daarom moet de mens ingrijpen op een gepaste wijze. Als je niet exact weet heeft over hoe en wat kan je best een <strong>gespecialiseerde dierenarts</strong> raadplegen. Hieronder kan je ook nog nuttige info vinden over enkle ziekten.</p>
+        </article>
+        <hr/>
+
+        <article>
+            <h2>Varkenspest</h2>
+            <p>Varkenspest is een <strong>virusziekte</strong> die we kennen in twee soorten nl.: de klassieke en de Afrikaanse varkenspest. De twee ziekten lijken erg op elkaar, maar ze worden veroorzaakt door verschillende virussen. Beide soorten zijn <strong>erg besmettelijk</strong> en vaak <strong>dodelijk voor de varkens</strong>. Het virus is <strong>ongevaarlijk voor mensen</strong>. <span class="bron">(bron: <a href="http://nl.wikipedia.org/wiki/Varkenspest" target="_blank">Wikipedia</a>)</span></p>
+        </article>
+        <article>
+            <h2>Diaree</h2>
+            <p>Diaree is een <strong>virusziekte</strong> die (bijna) alle dieren eens kan hebben. Bij diaree <strong>verliest het varken veel vocht</strong> waardoor ze wel eens kunnen sterven door uitdroging. Dit kan veroorzaakt worden door <strong>te koud weer of een te vochtige stal</strong>. Indien je merkt dat het niet vanzelf over gaat en het varken opmerkelijk wegkwijnt, is het verstandig om de dierenarts erbij te halen.</p>
+        </article>
+        <article>
+            <h2>Aujesky</h2>
+            <p>De ziekte van Aujeszky is een <strong>zeer besmettelijke virusziekte</strong> en die vooral varkensachtigen treft. Varkens die eenmaal besmet zijn, blijven <strong>levenslang drager</strong> van het virus en kunnen het om het even wanneer weer gaan uitscheiden en zo de ziekte verspreiden. Deze ziekte is <strong>enkel preventief te behandelen</strong> en is in sommige gevallen zelf verplicht! Aujesky komt sinds dien niet meer voor in België en Nederland.</p>
+            <p>Eenmaal het varken ermee besmet is, moet je het besmette dier laten inslapen en de stalinrichting grondig reinigen.</p>
+            <p>Bij varkensachtigen kunnen de vastgestelde <strong>symptomen</strong> erg variëren, gaande van lichte tot ernstige ademhalingsproblemen, alsook neurologische stoornissen en voortplantingsproblemen. <span class="bron">(bron en meer info: <a href="http://www.afsca.be/dierengezondheid/aujeszky/">FAVV</a>)</span></p>
+        </article>
+
+    </main>
+    <footer>
+            <div>
+                <p><strong>Over mij</strong></p>
+                <p class="bron">Deze website werd gemaakt door Hein Pauwelyn. Bekijk zeker ook eens <a href="http://student.howest.be/hein.pauwelyn-vand1/" target="_blank">mijn blog</a>.</p>
+            </div>
+            <div>
+                <p><strong>Bron</strong></p>
+                <p class="bron">Bron afbeeldingen: <a href="http://pixabay.com/" target="_blank">Pixabay</a> (tenzij anders vermeld)</p>
+            </div>
+    </footer>
+
+    <script>
+        document.getElementsByTagName("main")[0].style.minHeight = window.innerHeight - 208 + "px";
+    </script>
+
+
+    <script>
+        document.getElementsByClassName("kleinMenu")[0].addEventListener("click", function () {
+            toonMenu();
+        });
+
+        function toonMenu() {
+
+            var menu = document.getElementsByClassName("grootMenu")[0];
+
+            if (menu.id === "") {
+
+                menu.id = "kleineNav";
+            }
+            else{
+
+                menu.id = "";
+            }
+        }
+    </script>
+</body>
+</html>

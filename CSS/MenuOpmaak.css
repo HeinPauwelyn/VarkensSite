@@ -1,0 +1,177 @@
+html {
+	background-image: url('../afbeeldingen/bg-Menu.JPG');
+	background-repeat: repeat-x;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin-left: 10em;
+    /*max-height: 70px;*/
+    min-width: 100px;
+    top: 0;
+}
+
+nav > ul > li{
+    display: inline-block;
+	font-weight: 600;
+}
+
+li > a{
+    height: 25px;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+	margin-top: 13px;
+    margin-left: 10px;
+    line-height: 25px;
+    text-align: center;
+	color: #000000;
+    margin: 5px;
+}
+
+.menu:hover, .menu:focus, .menu.actief, .kleinMenu:hover {
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
+	font-style: normal;
+	font-weight: 600;
+    margin-bottom: 0;
+}
+
+.kleinMenu:hover {
+    height: 25px;
+}
+
+.actief{
+	border-bottom-color: #F3EEF0;
+	color: #F3EEF0;
+	cursor: default;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.icoon{
+	height:50px;
+	width:50px;
+	margin-left:5px;
+	margin-top:10px;
+	float:left;
+}
+
+.icoon:focus {
+	background-color:#E66E;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+footer {
+	clear: left;
+	background-image: url('../afbeeldingen/bg-Menu.JPG');
+    height: 95px;
+	border-radius: 15px 15px 0 0;
+	background-repeat: repeat;
+	margin-top: 15px;
+}
+
+footer > p {
+	text-align: right;
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
+	line-height: 30px;
+}
+
+footer div {
+	width: 45%;
+	margin: 0px 2%;
+	display: inline-block;
+    float: left;
+}
+
+footer a {
+	text-align: left;
+	color: black;
+	text-decoration: underline;
+	line-height: 20px;
+	height: 20px;
+	margin: 0;
+	padding: 3px 0;
+}
+/*navigatie verkleinen*/
+
+.kleinMenu {
+    height: 0px;
+    visibility: hidden;
+    margin: 0;
+}
+
+.kleinMenu p {
+    height: 25px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#kleineNav {
+    height: 200px;
+    background-color: rgba(230,110,170,0.5);
+    visibility: visible;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px){
+    .kleinMenu {
+        height: 25px;
+        visibility: visible;
+        margin: 0;
+        margin-left: 10%;
+        display: inline-block;
+        margin-top: 30px;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+
+    li > a {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .grootMenu {
+        height: 0;
+        visibility: hidden;
+    }
+
+    body {
+        width: 95%;
+        margin: auto;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #kleineNav {
+        height: 179px;
+        background-color: rgba(230,110,170,0.5);
+        visibility: visible;
+        margin-left: 0;
+        border-radius: 10px;
+    }
+}
+
+/*breed*/
+@media only screen and (min-width: 992px) {
+    body {
+        margin: auto;
+        width: 960px;
+        /*background-color: #e28f89;*/
+    }
+
+    img{
+        width: 500px;
+    }
+
+    #kleineNav {
+    }
+}

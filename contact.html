@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact</title>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="afbeeldingen/ProvarIcoon.png" />
+	<link href="CSS/Normalize.css" rel="stylesheet"/>
+	<link href="CSS/ContactOpmaak.css" rel="stylesheet"/>
+	<link href="CSS/MenuOpmaak.css" rel="stylesheet"/>
+	<script type="text/javascript" src="JS/Contact.js"></script>
+</head>
+    <header>
+        <nav>
+            <img src="afbeeldingen/ProvarIcoon.png" class="icoon" alt="naar home pagina" />
+            <div class="kleinMenu">
+                <p id="menuKnop">Toon Menu</p>
+            </div>
+            <ul class="grootMenu">
+                <li><a href="index.html" class="menu" alt="Home">Home</a></li>
+                <li><a href="varkensrassen.html" class="menu" alt="Varkensrassen">Varkensrassen</a></li>
+                <li><a href="kweken.html" class="menu" alt="Varkens kweken">Varkens kweken</a></li>
+                <li><a href="varkensvlees.html" class="menu" alt="Varkensvlees">Varkensvlees</a></li>
+                <li><a href="ziekten.html" class="menu" alt="Ziekten">Ziekten</a></li>
+                <li><a href="recept.html" class="menu" alt="recepten">Een recept</a></li>
+                <li><a href="contact.html" class="menu actief" alt="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+	<main>
+
+		<form>
+            <div id="boodschapblok">
+                <p id="boodschap"></p>
+            </div>
+            <p>Als er nog vragen zijn omterent varkens, kan je me altijd contacteren via onderstaand invulformulier. De velden met een <span class="verplicht">*</span> zijn verplichte velden. Uw bericht wordt niet getoond op deze website.</p>
+
+            <label for="naam">Naam: <span class="verplicht">*</span></label>
+			<input id="naam" placeholder="Naam"/><br/>
+			
+			<label for="email">E-mail: <span class="verplicht">*</span></label>
+			<input id="email" placeholder="E-mail"/><br/>
+			
+			<label for="titel">Titel: <span class="verplicht">*</span></label>
+			<input id="titel" placeholder="Titel"/><br/>
+
+            <div id="hidden">
+                <label for="verbodenveld">Dit niet invullen:</label>
+                <input  type="text" id="verbodenveld" /><br/>
+            </div>
+			
+			<label for="bericht">Bericht: <span class="verplicht">*</span></label><br/>
+			<textarea id="bericht" placeholder="Titel" rows="7" cols="35"></textarea><br/>
+			
+			<button>Verzenden</button>
+
+		</form>
+
+		<img id="post" src="afbeeldingen/postzak.png"/>
+		
+	</main>
+    <footer>
+        <div>
+            <p><strong>Over mij</strong></p>
+            <p class="bron">Deze website werd gemaakt door Hein Pauwelyn. Bekijk zeker ook eens <a href="http://student.howest.be/hein.pauwelyn-vand1/" target="_blank">mijn blog</a>.</p>
+        </div>
+        <div>
+            <p><strong>Bron</strong></p>
+            <p class="bron">Bron afbeeldingen: <a href="http://pixabay.com/" target="_blank">Pixabay</a> (tenzij anders vermeld)</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementsByTagName("main")[0].style.minHeight = window.innerHeight - 208 + "px";
+    </script>
+
+    <script>
+        document.getElementsByClassName("kleinMenu")[0].addEventListener("click", function () {
+            toonMenu();
+        });
+
+        function toonMenu() {
+
+            var menu = document.getElementsByClassName("grootMenu")[0];
+
+            if (menu.id === "") {
+
+                menu.id = "kleineNav";
+            }
+            else{
+
+                menu.id = "";
+            }
+        }
+    </script>
+<body>
+</body>
+</html>
